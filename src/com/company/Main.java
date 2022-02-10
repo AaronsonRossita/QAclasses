@@ -65,7 +65,12 @@ public class Main {
         Calculator calculator = new Calculator();
 //        int newInt = Calculator.sub(5,4);
 //        System.out.println(newInt);
-        System.out.println(Calculator.sub(5,4));
+//        System.out.println(Calculator.sub(5,4));
+
+        int[] arr = {1,2,3,4,5};
+        System.out.println(Calculator.sumOfArr(arr));
+        System.out.println(Calculator.sumOfArrEach(arr));
+
     }
 
 
