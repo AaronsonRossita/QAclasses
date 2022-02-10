@@ -16,4 +16,16 @@ public class Employee {
         this.education = education;
     }
 
+    public void printId(){
+        System.out.println(this.id);
+    }
+
+    public void printName(){
+        System.out.println(this.name);
+    }
+
+    static public void staticExample(){
+        System.out.println("static function");
+    }
+
 }

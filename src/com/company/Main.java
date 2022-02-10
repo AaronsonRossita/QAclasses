@@ -50,19 +50,23 @@ public class Main {
 //        System.out.println(employee1.name);
 
         Employee employee2 = new Employee(325255,"New Employee", false);
-        System.out.println(employee2.name);
-        System.out.println(employee2.id);
-        System.out.println(employee2.education);
-
-        employee2.id = 676878;
-
-        System.out.println(employee2.id);
-
-
-
+//        System.out.println(employee2.name);
+//        System.out.println(employee2.id);
+//        System.out.println(employee2.education);
+//
+//        employee2.id = 676878;
+//
+//        System.out.println(employee2.id);
+//
+//        employee2.printId();
+//        employee2.printName();
+//
+//        Employee.staticExample();
+        Calculator calculator = new Calculator();
+//        int newInt = Calculator.sub(5,4);
+//        System.out.println(newInt);
+        System.out.println(Calculator.sub(5,4));
     }
 
-    static int sum(){
-        return 0;
-    }
+
 }
