@@ -67,11 +67,58 @@ public class Main {
 //        System.out.println(newInt);
 //        System.out.println(Calculator.sub(5,4));
 
-        int[] arr = {1,2,3,4,5};
-        System.out.println(Calculator.sumOfArr(arr));
-        System.out.println(Calculator.sumOfArrEach(arr));
+//        int[] arr = {1,2,3,4,5};
+//        System.out.println(Calculator.sumOfArr(arr));
+//        System.out.println(Calculator.sumOfArrEach(arr));
+
+        Car car1 = new Car();
+        Car car2 = new Car("Seat", "Leon",
+                                    3, true);
+        Car car3 = new Car("Kia","Sportage",
+                                    5,false);
+
+//        car2.model();
+//        car3.model();
+//
+//        car2.ride();
+
+//        Car.howTo();
+
+//        System.out.println("words words");
+//        System.out.println("words" +
+//                           " words");
+//        System.out.println("words \nwords " + x);
+
+//        car1.model();
+//        car2.model();
+//
+//        addParameters(car1);
+//        addParameters(car2);
+//
+//        car1.model();
+//        car2.model();
+
+        createCar().model();
 
     }
 
+    public static void addParameters(Car temp){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pls provide company name");
+        temp.companyName = sc.nextLine();
+        System.out.println("Pls provide model name");
+        temp.model = sc.nextLine();
+        System.out.println("Pls provide the number of doors");
+        temp.doors = sc.nextInt();
+        System.out.println("Is the car automatic true or false");
+        temp.automatic = sc.nextBoolean();
+    }
+
+    public static Car createCar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pls provide string for company name, string for model, int for doors and boolean for gear");
+        Car temp = new Car(sc.nextLine(), sc.nextLine(), sc.nextInt(),sc.nextBoolean());
+        return temp;
+    }
 
 }
